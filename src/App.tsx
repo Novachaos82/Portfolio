@@ -1,14 +1,13 @@
 import "./App.css";
-import Intro from "./components/Intro/Intro";
-import Skills from "./components/Skills/Skills";
+import Main from "./components/Main";
+
 import SmoothScroll from "./components/SmoothScroll/SmoothScroll";
 
 function App() {
   return (
     <>
       <SmoothScroll>
-        <Intro />
-        <Skills />
+        <Main />
         <div className="min-h-screen bg-blue-400"></div>
       </SmoothScroll>
     </>

@@ -1,6 +1,6 @@
 const container = {
   hidden: { opacity: 0, y: "200" },
-  show: (i = 1) => ({
+  show: (i = 0) => ({
     y: 0,
     opacity: 1,
     transition: {

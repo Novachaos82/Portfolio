@@ -13,3 +13,13 @@ export const skillsData = [
   "Express",
   "Framer Motion",
 ] as const;
+
+export const projectTags = [
+  "React",
+  "TailwindCSS",
+  "Firebase",
+  "Node.js",
+  "MongoDB",
+  "Express",
+  "Framer Motion",
+] as const;
