@@ -33,7 +33,8 @@ import blogs from "../assets/blogs.png";
 export const projectsData = [
   {
     title: "React Instagram",
-    Description: "A fully functional instagram clone using firebase and react.",
+    Description:
+      "React Instagram is a comprehensive Instagram clone that replicates many of the core features and functionalities of the popular social media platform. Built using modern web technologies, this project demonstrates my proficiency in working with React.js, Tailwind CSS for styling, and Firebase for backend services such as authentication, real-time database, and file storage.",
     ImageURL: instaImage,
     href: "https://instagram-clone-e762b.web.app/",
     projectTags: [
@@ -61,7 +62,8 @@ export const projectsData = [
   },
   {
     title: "AutomicroUAS",
-    Description: "A project made for an organization",
+    Description:
+      "AutomicroUAS is a cutting-edge web application developed for a client organization. This project showcases my proficiency in modern web development technologies, with a focus on creating an engaging and visually appealing user interface and user experience.",
     ImageURL: amos,
     href: "https://beta.amosaerospace.com/",
     projectTags: [
@@ -88,11 +90,11 @@ export const projectsData = [
     ],
   },
   {
-    title: "Portfolio",
+    title: "Blog Site",
     Description:
-      "The chat room works as a virtual room, where groups of people send messages that others can read instantaneously.",
+      "As part of The Odin Project curriculum, I developed a comprehensive blog site with authorization, posting capabilities, and a content management system (CMS). This project allowed me to gain hands-on experience in building a full-stack web application using the MERN stack.",
     ImageURL: blogs,
-    href: "https://chat-app-d3c99.web.app/",
+    href: "https://github.com/Novachaos82/blogs-client",
     projectTags: [
       "React",
       "TailwindCSS",
@@ -102,6 +104,7 @@ export const projectsData = [
       "Node.js",
       "Passport",
       "JWT",
+      "TypeScript",
     ],
   },
 ] as const;

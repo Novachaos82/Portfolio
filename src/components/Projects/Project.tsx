@@ -53,7 +53,7 @@ const Project: FC<ProjectProps> = ({
           <h3 className="text-xl font-semibold tracking-tighter">
             {title ? title : "Twitter Clone"}
           </h3>
-          <div className="text-white italic text-sm  font-playfair flex flex-wrap">
+          <div className="text-white italic text-[16px]  font-playfair flex flex-wrap">
             {projectTags?.map((tag, index) => {
               return (
                 <span key={index} className="pr-2 ">
