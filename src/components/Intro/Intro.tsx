@@ -20,7 +20,7 @@ const Intro: FC<IntroProps> = () => {
 
   return (
     <div
-      className=" min-h-screen flex flex-col justify-center items-center font-fira bg-black  text-white  uppercase text-lg md:text-2xl leading-relaxed md:leading-[1.25]  antialiased"
+      className="min-h-screen flex flex-col justify-center items-center font-fira bg-black  text-white  uppercase text-lg md:text-2xl leading-relaxed md:leading-[1.25]  antialiased"
       ref={scrollRef}
     >
       {/* intro header */}
@@ -46,10 +46,28 @@ const Intro: FC<IntroProps> = () => {
         <motion.h2 variants={textItem} className="" style={{ x: rightValue }}>
           A Front-End Developer
         </motion.h2>
+        <motion.div
+          className="flex gap-4 text-[12px] md:text-[16px] max-w-[900px] font-[500] text-white   p-[2rem] leading-relaxed"
+          variants={delayedVariant}
+          custom={0.7}
+          initial="hidden"
+          animate="show"
+        >
+          <a target="_blank" href="https://github.com/Novachaos82">
+            Github
+          </a>
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1kFJ2CVy-3cXyYi7Hmhqo18lFUB_l6GdA/view?usp=sharing"
+          >
+            Resume
+          </a>
+        </motion.div>
       </motion.div>
       {/* intro paragraph*/}
+
       <motion.p
-        className="text-center text-[12px] md:text-[16px] max-w-[900px] font-[500] mt-[8rem]  p-[2rem] leading-relaxed"
+        className="text-center text-[12px] md:text-[16px] max-w-[900px] font-[500] mt-[6rem]  p-[2rem] leading-relaxed"
         variants={delayedVariant}
         initial="hidden"
         animate="show"

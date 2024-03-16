@@ -10,7 +10,10 @@ const Skills: FC<SkillsProps> = () => {
   const isInView = useInView(containerRef, { amount: 0.3, once: true });
 
   return (
-    <div className="bg-black text-white max-h-[500px] flex flex-col justify-center items-center px-4 pb-[12rem] gap-10">
+    <div
+      className="bg-black text-white max-h-[500px] flex flex-col justify-center items-center px-4 pb-[12rem] gap-10"
+      id="skills"
+    >
       <div className="text-white font-playfair font-bold text-4xl tracking-tighter">
         Skills
       </div>

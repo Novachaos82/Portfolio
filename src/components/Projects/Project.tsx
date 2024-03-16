@@ -1,15 +1,29 @@
 import { FC, HtmlHTMLAttributes, useRef } from "react";
 import twitter from "../../assets/twitter.webp";
-import { projectTags } from "../../lib/data";
+
 import { cn } from "../../lib/utils";
 import { container, imageVariants, textItem } from "../../utils/variants";
 import { MotionValue, motion, useInView } from "framer-motion";
 
 interface ProjectProps extends HtmlHTMLAttributes<HTMLDivElement> {
   translateValue?: string | MotionValue<string>;
+  projectData: projectDataProps;
 }
 
-const Project: FC<ProjectProps> = ({ className, translateValue }) => {
+interface projectDataProps {
+  title?: string;
+  Description?: string;
+  ImageURL?: string;
+  href?: string;
+  projectTags?: readonly string[];
+}
+
+const Project: FC<ProjectProps> = ({
+  className,
+  translateValue,
+  projectData,
+}) => {
+  const { title, Description, ImageURL, href, projectTags } = projectData;
   const ref = useRef<HTMLImageElement>(null);
   const isInView = useInView(ref, { once: true });
 
@@ -23,22 +37,24 @@ const Project: FC<ProjectProps> = ({ className, translateValue }) => {
         initial="hidden"
       >
         <motion.img
-          className="filter grayscale hover:filter-none duration-20 w-full"
+          className="filter grayscale hover:filter-none duration-20 w-full object-cover"
           whileHover={{
             scale: 1.02,
           }}
           variants={imageVariants}
           animate={isInView ? "visible" : "hidden"}
           ref={ref}
-          src={twitter}
+          src={ImageURL ? ImageURL : twitter}
           alt=""
+          width={500}
+          height={500}
         />
         <motion.div className="my-4" variants={textItem}>
           <h3 className="text-xl font-semibold tracking-tighter">
-            TWITTER CLONE
+            {title ? title : "Twitter Clone"}
           </h3>
           <div className="text-white italic text-sm  font-playfair flex flex-wrap">
-            {projectTags.map((tag, index) => {
+            {projectTags?.map((tag, index) => {
               return (
                 <span key={index} className="pr-2 ">
                   {tag}
@@ -47,15 +63,15 @@ const Project: FC<ProjectProps> = ({ className, translateValue }) => {
             })}
           </div>
           <motion.p className="text-white/50 my-2" variants={textItem}>
-            A Twitter clone built with React and Firebase. The users can edit
-            their profile, follow and unfollow accounts, write and like tweets
-            and visit other profiles. I made it possible for users to log in
-            through Google or use the site as a guest to test the functionality.
+            {Description
+              ? Description
+              : "A Twitter clone built with React and Firebase. The users can edit their profile, follow and unfollow accounts, write and like tweets and visit other profiles. I made it possible for users to log in through Google or use the site as a guest to test the functionality."}
           </motion.p>
           <motion.a
             variants={textItem}
             className="font-semibold tracking-wide italic text-2xl font-playfair underline"
-            href="/"
+            target="_blank"
+            href={href ? href : "/"}
           >
             View Project
           </motion.a>

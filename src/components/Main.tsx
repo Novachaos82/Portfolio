@@ -7,7 +7,7 @@ interface MainProps {}
 
 const Main: FC<MainProps> = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <Intro />
       <Skills />
       <Projects />
