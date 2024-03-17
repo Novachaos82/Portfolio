@@ -12,6 +12,7 @@ export const skillsData = [
   "MongoDB",
   "Express",
   "Framer Motion",
+  "TypeScript",
 ] as const;
 
 export const projectTags = [
@@ -47,20 +48,6 @@ export const projectsData = [
     ],
   },
   {
-    title: "Chat App",
-    Description:
-      "The chat room works as a virtual room, where groups of people send messages that others can read instantaneously.",
-    ImageURL: chatAppImage,
-    href: "https://chat-app-d3c99.web.app/",
-    projectTags: [
-      "React",
-      "TailwindCSS",
-      "Firebase",
-      "FirebaseAuth",
-      "Framer Motion",
-    ],
-  },
-  {
     title: "AutomicroUAS",
     Description:
       "AutomicroUAS is a cutting-edge web application developed for a client organization. This project showcases my proficiency in modern web development technologies, with a focus on creating an engaging and visually appealing user interface and user experience.",
@@ -74,7 +61,6 @@ export const projectsData = [
       "ShadCN/UI",
     ],
   },
-
   {
     title: "Portfolio",
     Description:
@@ -89,6 +75,21 @@ export const projectsData = [
       "TypeScript",
     ],
   },
+  {
+    title: "Chat App",
+    Description:
+      "The chat room works as a virtual room, where groups of people send messages that others can read instantaneously.",
+    ImageURL: chatAppImage,
+    href: "https://chat-app-d3c99.web.app/",
+    projectTags: [
+      "React",
+      "TailwindCSS",
+      "Firebase",
+      "FirebaseAuth",
+      "Framer Motion",
+    ],
+  },
+
   {
     title: "Blog Site",
     Description:

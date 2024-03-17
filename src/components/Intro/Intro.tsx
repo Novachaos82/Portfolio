@@ -53,12 +53,17 @@ const Intro: FC<IntroProps> = () => {
           initial="hidden"
           animate="show"
         >
-          <a target="_blank" href="https://github.com/Novachaos82">
+          <a
+            target="_blank"
+            href="https://github.com/Novachaos82"
+            className=" border-b-[2px]  border-white hover:border-transparent duration-400"
+          >
             Github
           </a>
           <a
             target="_blank"
             href="https://drive.google.com/file/d/1kFJ2CVy-3cXyYi7Hmhqo18lFUB_l6GdA/view?usp=sharing"
+            className=" border-b-[2px]  border-white hover:border-transparent duration-400"
           >
             Resume
           </a>

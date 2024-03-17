@@ -46,7 +46,7 @@ const Navbar: FC<NavbarProps> = () => {
       <ul className="flex justify-between gap-5 text-xs md:text-lg uppercase font-fira">
         <NavLink title={"skills"} scroll={500} />
         <NavLink title={"projects"} scroll={1400} />
-        <NavLink title={"about me & contact"} scroll={7000} />
+        <NavLink title={"about me"} scroll={7000} />
       </ul>
     </motion.div>
   );
