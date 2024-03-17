@@ -27,8 +27,15 @@ const Navbar: FC<NavbarProps> = () => {
     const scrollTop = () => window.scrollTo({ top: scroll });
 
     return (
-      <li className="hover:cursor-pointer" onClick={scrollTop}>
-        {title}
+      <li
+        className="relative inline-block group cursor-pointer"
+        onClick={scrollTop}
+      >
+        <span className="text-white hover:text-white transition-colors duration-300">
+          {title}
+        </span>
+
+        <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white opacity-100 scale-0 origin-center group-hover:scale-100 transition-all duration-400 ease-in-out"></span>
       </li>
     );
   };
@@ -40,13 +47,13 @@ const Navbar: FC<NavbarProps> = () => {
       variants={navScrollVariants}
     >
       <div className="font-playfair font-bold text-xl md:text-3xl tracking-tighter">
-        Nova
+        <a href="/"> Nova</a>
       </div>
 
       <ul className="flex justify-between gap-5 text-xs md:text-lg uppercase font-fira">
         <NavLink title={"skills"} scroll={500} />
         <NavLink title={"projects"} scroll={1400} />
-        <NavLink title={"about me"} scroll={7000} />
+        <NavLink title={"about me"} scroll={5000} />
       </ul>
     </motion.div>
   );

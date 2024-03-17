@@ -56,14 +56,14 @@ const Intro: FC<IntroProps> = () => {
           <a
             target="_blank"
             href="https://github.com/Novachaos82"
-            className=" border-b-[2px]  border-white hover:border-transparent duration-400"
+            className=" border-b-[2px]  border-white hover:border-transparent transition-all duration-[400ms]"
           >
             Github
           </a>
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/1kFJ2CVy-3cXyYi7Hmhqo18lFUB_l6GdA/view?usp=sharing"
-            className=" border-b-[2px]  border-white hover:border-transparent duration-400"
+            href="https://drive.google.com/file/d/1qoHTnq0MyFjeEGVwM8bMy-USmAXntgEp/view?usp=sharing"
+            className=" border-b-[2px]  border-white hover:border-transparent transition-all duration-[400ms]"
           >
             Resume
           </a>

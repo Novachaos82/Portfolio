@@ -45,7 +45,7 @@ const Projects: FC<ProjectProps> = () => {
 
   return (
     <section className=" bg-black pb-0" id="projects">
-      <div className=" mx-auto  lg:p-[8rem] md:p-[6rem] p-[4rem]">
+      <div className=" mx-auto  lg:px-[8rem]  lg:pt-[8rem] md:px-[6rem]  md:pt-[6rem]  p-[4rem] pt-[4rem] pb-0">
         <div
           className={`text-white font-playfair font-bold text-5xl tracking-tighter pb-[4rem]`}
         >
