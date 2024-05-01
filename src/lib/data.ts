@@ -52,7 +52,7 @@ export const projectsData = [
     Description:
       "AutomicroUAS is a cutting-edge web application developed for a client organization. This project showcases my proficiency in modern web development technologies, with a focus on creating an engaging and visually appealing user interface and user experience.",
     ImageURL: amos,
-    href: "https://beta.amosaerospace.com/",
+    href: "https://amosaerospace.com/",
     projectTags: [
       "NextJS",
       "TailwindCSS",
