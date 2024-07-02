@@ -30,8 +30,39 @@ import chatAppImage from "../assets/chat-app.png";
 import amos from "../assets/amos.png";
 import portfolio from "../assets/portfolio.png";
 import blogs from "../assets/blogs.png";
+import IDTA from "../assets/IDTA.png";
 
 export const projectsData = [
+  {
+    title: "AutomicroUAS",
+    Description:
+      "AutomicroUAS is a cutting-edge web application developed for a client organization. This project showcases my proficiency in modern web development technologies, with a focus on creating an engaging and visually appealing user interface and user experience.",
+    ImageURL: amos,
+    href: "https://amosaerospace.com/",
+    projectTags: [
+      "NextJS",
+      "TailwindCSS",
+      "TailwindCSS",
+      "Hygraph",
+      "ShadCN/UI",
+    ],
+  },
+  {
+    title: "IDTA",
+    Description:
+      "I was responsible for implementing major parts of the site, ensuring it was both responsive and user-friendly. I integrated backend services using Appwrite for authentication, database management, and file storage, and leveraged Hygraph for dynamic content management.",
+    ImageURL: IDTA,
+    href: "https://idta.in/",
+    projectTags: [
+      "NextJS",
+      "TailwindCSS",
+      "TailwindCSS",
+      "Hygraph",
+      "ChakraUI",
+      "Appwrite",
+      "Razorpay-CheckoutJS",
+    ],
+  },
   {
     title: "React Instagram",
     Description:
@@ -47,20 +78,7 @@ export const projectsData = [
       "Framer Motion",
     ],
   },
-  {
-    title: "AutomicroUAS",
-    Description:
-      "AutomicroUAS is a cutting-edge web application developed for a client organization. This project showcases my proficiency in modern web development technologies, with a focus on creating an engaging and visually appealing user interface and user experience.",
-    ImageURL: amos,
-    href: "https://amosaerospace.com/",
-    projectTags: [
-      "NextJS",
-      "TailwindCSS",
-      "TailwindCSS",
-      "Hygraph",
-      "ShadCN/UI",
-    ],
-  },
+
   {
     title: "Portfolio",
     Description:
